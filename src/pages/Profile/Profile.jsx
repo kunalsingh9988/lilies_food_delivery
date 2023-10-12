@@ -28,7 +28,7 @@ const Profile = () => {
           <h1>Your Profile</h1>
           <p>
             {" "}
-            <span>Name :</span> {user.displayName}
+            <span>Your Name :</span> {user.displayName}
           </p>
           <p>
             <span>Your Email :</span> {user.email}
