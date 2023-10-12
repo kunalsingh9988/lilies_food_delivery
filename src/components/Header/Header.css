@@ -1,0 +1,114 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    background-color: #00302E;
+    padding: 20px 80px;
+}
+.leftHeader{
+   display: flex;
+   gap: 15px;
+}
+.leftHeader a{
+    text-decoration: none;
+}
+.leftHeader h1{
+    color: white;
+    
+}
+.rightHeader ul {
+    display: flex;
+    align-items: center;
+    gap: 55px;
+}
+.rightHeader ul li {
+    list-style-type: none;
+}
+.rightHeader ul li a{
+    text-decoration: none;
+    color: white;
+}
+.rightHeader ul li button {
+    padding: 10px 20px;
+
+    border-radius: 7px;
+    outline: none;
+    border: none;
+    background-color: #E2B887;
+    cursor: pointer;
+    color: black;
+    font-size: 17px;
+}
+.rightHeader ul li a span{
+    color: #FBDDBB;
+}
+.userHeaderDetails{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.userHeaderDetails a img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+.appLogo{
+  
+    width: 40px;
+    height: 40px;
+}
+.menu{
+
+    display: none;
+}
+
+
+@media screen and (max-width:500px){
+    .header{
+        padding: 0;
+        
+    }
+    .header2{
+        overflow: hidden;
+   
+    }
+    .leftHeader{
+        margin-left: 20px;
+        transition: .5s ease-in-out;
+    }
+     .rightHeader{
+        padding: 80px 0 30px 30px;
+        overflow: hidden;
+        width: 200px;
+        margin-top: 120px;
+        background-color:#00514f;
+   
+        
+        z-index: 1;
+     }
+     .rightHeader2{
+        transform: translateX(200px);
+   
+     }
+     .rightHeader ul{
+        flex-direction: column;
+        align-items: flex-start;
+     }
+     .menu{
+        display: flex;
+        position: absolute;
+        top: 30px;
+        z-index: 2;
+        left: 330px;
+     }
+     .menuBar{
+        color: white;
+        height: 40px;
+        width: 40px;
+        display: flex;
+     }
+     .rightHeader ul li button{
+        font-size: 12px;
+     }
+}
