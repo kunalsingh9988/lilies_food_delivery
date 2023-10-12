@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom'
 const Footer = () => {
   return (
     <div className='footer'>
-        <p>© 2023 Lilies, All right reserved.</p>
+        <p>© 2023 Lilies, Kunal Singh All right reserved.</p>
         <div className="footerIcons">
             <div className="icon">
                 <Link>

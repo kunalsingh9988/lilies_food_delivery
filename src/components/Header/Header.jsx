@@ -63,16 +63,7 @@ const Header = () => {
                   <span>Home</span>
                 </Link>
               </li>
-              <li>
-                <Link to="/">
-                  <span>About</span>
-                </Link>
-              </li>
-              <li>
-                <Link to="/">
-                  <span>Contact</span>
-                </Link>
-              </li>
+              
               {user ? (
                 <>
                   <li>
