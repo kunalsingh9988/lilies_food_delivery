@@ -24,7 +24,6 @@ const Cart = ({ cart, setCart }) => {
   const redirectToHome = () => {
 
     dispatch(addToOrder(cartProducts))
-    console.log(cartProducts)
 
     setIsLoading(true);
     setTimeout(() => {

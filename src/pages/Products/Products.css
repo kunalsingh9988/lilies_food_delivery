@@ -71,35 +71,25 @@
   color: black;
   font-weight: 400;
 }
-.hsp {
-  color: black;
-  background-color: aqua;
-  padding: 2px 2px 8px 8px;
-  border-radius: 5px;
-  width: 30px;
-  height: 30px;
-  font-size: 20px;
-  font-weight: 400;
-  align-self: flex-end;
-  margin-left: 50px;
-}
-.hspFirst {
-  margin-left: 80px;
-}
+
 /* right side  */
 .rightProductContainer {
     transition: 0.8s ease-in-out;
-    margin: 80px;
+    max-width: 100%;
+    margin: 5%;
+
 }
 .productTitle {
   text-align: center;
 }
 .productTitle h1 {
+  font-size: 45px;
   font-weight: 500;
 }
 .productTitle h1 span{
-  font-size: 45px;
-  color: #00eddf;
+
+  text-transform: uppercase;
+  color: #00EDDF;
 }
 .productTitle p {
   color: gray;
@@ -107,11 +97,20 @@
 .productItems {
   margin-top: 50px;
   display: flex;
+  justify-content: center;
   gap: 30px;
   flex-wrap: wrap;
 }
+.productItems.productItemsSide{
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
 .productCategoryButtons{
-  padding: 3%;
+  display: flex;
+  justify-content: center;
 }
 .categoryBtn{
   cursor: pointer;
@@ -178,15 +177,24 @@
   background-color: #f0f0f0;
 }
 .searchContainer{
-  padding: 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 4%;
+}
+.searchContainer p {
+  margin-top: 10px;
 }
 .searchInput{
   color: #06e775;
   outline: none;
   border-radius: 5px;
   border: 1px solid rgb(190, 190, 190);
+  width: 300px;
   font-size: 15px;
-  padding: 2%;
+  font-weight: 500;
+  padding: 5px 10px;
 }
 .searchContainer p{
   color: red;
@@ -199,6 +207,10 @@
   display: none;
 }
 
+
+
+
+/* mobile view  */
 @media screen and (max-width: 500px) {
   .leftProductContainer {
     padding: 20px 10px;
@@ -253,7 +265,6 @@
   }
   .productItem.side{
     transition: 0.8s ease-in-out;
-
     width: 250px;
   }
   .productDes {
@@ -289,8 +300,13 @@
     min-width: 300px;
     transform: translateX(-120px);
   }
-  .searchContainer{
-    margin-top: 30px;
+  .searchInput{
+   
+   margin-top: 30px;
+    width: 170px;
+    font-size: 10px;
+    font-weight: 500;
+    padding: 5px 10px;
   }
 
 

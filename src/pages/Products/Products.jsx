@@ -2,7 +2,8 @@
 import React, { useState } from "react";
 import "./Products.css";
 import { AiFillHome } from "react-icons/ai";
-import { BsFillPersonFill, BsFillCartFill } from "react-icons/bs";
+import { BsFillPersonFill} from "react-icons/bs";
+// , BsFillCartFill  cart icon which I will use soon
 import { HiTemplate } from "react-icons/hi";
 import {
   MdKeyboardDoubleArrowLeft,
@@ -98,12 +99,12 @@ const Products = () => {
               </Link>
 
             </h2>
-            <h2>
-              <Link to={user ? "/products/orders" : "/login"}>
-              <BsFillCartFill className="productIcon " /> Your Cart
-              </Link>
+            {/* <h2>
+              
+              <BsFillCartFill className="productIcon "  /> Your Cart
+            
 
-            </h2>
+            </h2> */}
        
             <div className="leftProductCategoryButtons">
             <h2 className="filterTitle">Filter by Category</h2>
@@ -128,6 +129,8 @@ const Products = () => {
           allCategories={allCategories}
           items={items}
           searchItems={searchItems}
+          
+    
         />
       </div>
     </div>

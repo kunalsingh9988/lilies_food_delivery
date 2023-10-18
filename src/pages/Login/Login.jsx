@@ -80,7 +80,8 @@ const Login = () => {
   return (
     <div id="login">
       <div className="loginContainer">
-        <h4>Welcome to Lilies!</h4>
+        {user ?  <h4>Welcome to Lilies!</h4> :  <h4>Login to continue!</h4>}
+       
 
         <button className="googleBtn" onClick={signInWithGoogle}>
           <AiOutlineGoogle className="googleIcon" />

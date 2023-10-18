@@ -74,7 +74,7 @@ const MainProduct = ({
           })}
         </div>
       </div>
-      <div className="productItems">
+      <div className={side ? 'productItems productItemsSide' : 'productItems '}>
         {items.map((data) => {
           const { id, name, imageUrl, description, price } = data;
           return (
@@ -94,6 +94,7 @@ const MainProduct = ({
           );
         })}
       </div>
+   
     </div>
   );
 };
